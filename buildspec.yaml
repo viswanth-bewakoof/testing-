@@ -5,7 +5,7 @@ phase:
   build:
     command:
       - echo "hello"
-      - sshpass -p $PASSWD ssh root@15.206.67.253
+      - sshpass -p ${PASSWD} ssh root@15.206.67.253
       - chmod -x test.sh
       - ./test.sh
   post_build:
