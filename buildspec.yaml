@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - sudo apt-get install sshpass
+      - apt-get install sshpass
   build:
     commands:
       - echo "hello"
