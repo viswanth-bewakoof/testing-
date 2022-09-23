@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - echo "hello"
-      - sshpass -p Root@123 ssh -T root@15.206.67.253
+      - passh -p Root@123 ssh -T root@15.206.67.253
       - chmod -x test.sh
       -  ./test.sh
   post_build:
