@@ -1,10 +1,10 @@
 version: 0.2
 # run-as: linux
 phases:
-#   pre_build:
-#     commands:
-#       - yum update -y
-#       - yum install sshpass
+  pre_build:
+    commands:
+      - apt-get update
+      - apt-get install -y sshpass zip unzip
   build:
     commands:
       sh "echo hello"
