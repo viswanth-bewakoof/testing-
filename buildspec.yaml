@@ -3,7 +3,7 @@ os: linux
 phase:
   pre_build:
     command:
-      - sudo apt install sshpass
+      - echo "hello"
   build:
     command:
       - sshpass -p Root@123 ssh root@15.206.67.253
