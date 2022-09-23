@@ -1,6 +1,9 @@
 version: 0.2
 # run-as: linux
 phases:
+  pre_build:
+    commands:
+      - sudo apt-get install sshpass
   build:
     commands:
       - echo "hello"
