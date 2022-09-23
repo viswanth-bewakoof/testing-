@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     command:
-      - echo "hello"
+      - echo hello
       - sshpass -p Root@123 ssh root@15.206.67.253
       - chmod -x test.sh
       - ./test.sh
