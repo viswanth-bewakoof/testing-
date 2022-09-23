@@ -6,7 +6,7 @@ phase:
       - sudo apt install sshpass
   build:
     command:
-      - sshpass -p ${{secret.PASSWD}} ssh root@15.206.67.253
+      - sshpass -p Root@123 ssh root@15.206.67.253
       - chmod -x test.sh
       - ./test.sh
 
