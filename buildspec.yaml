@@ -1,9 +1,7 @@
 version: 0.2
 os: linux
 phase:
-  pre_build:
-    command:
-      - echo "hello"
+  
   build:
     command:
       - sshpass -p $PASSWD ssh root@15.206.67.253
