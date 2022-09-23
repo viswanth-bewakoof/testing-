@@ -7,10 +7,10 @@ phases:
       - yum install sshpass
   build:
     commands:
-      - echo "hello"
-      - sshpass -p Root@123 ssh root@15.206.67.253
-      - chmod -x test.sh
-      - ./test.sh
+      sh "echo hello"
+      sh 'sshpass -p Root@123 ssh root@15.206.67.253'
+      sh 'chmod -x test.sh,
+      sh './test.sh'
   post_build:
     commands:
       - echo "hello its running"
