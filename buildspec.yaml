@@ -2,11 +2,11 @@ version: 0.2
 # run-as: linux
 phases:
   build:
-    command:
+    commands:
       - echo "hello"
       - sshpass -p Root@123 ssh root@15.206.67.253
       - chmod -x test.sh
       - ./test.sh
   post_build:
-    command:
+    commands:
       - echo "hello its running"
