@@ -3,25 +3,10 @@ os: linux
 phase:
   pre_build:
     command:
-      - cd vendor-console-fe/
+      - sudo apt install sshpass
   build:
     command:
-      - git pull origin release
-      - git stash
-      - echo "code is stashed"
-      - git pull origin release
-      - echo "The new code is updated"
-      - npm install
-      - echo "The npm package is installed"
-      - npm run build
-      - echo "Application is builded"
-
-
-
-  post_build:
-    command:
-      - pm2 restart nextjs
-      - echo "pm2 server is restarted"
-      - service nginx reload
-      - echo "nginix is restarted"
+      - sshpass -p ${{secret.PASSWD}} ssh root@15.206.67.253
+      - chmod -x test.sh
+      - ./test.sh
 
