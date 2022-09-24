@@ -9,7 +9,7 @@ phases:
     commands:
       - echo "hello"
 #       - SSHPASS='Root@123' sshpass -e ssh root@15.206.67.253
-      - ssh root@15.206.67.253 |sleep 10 |echo "Root@123"
+      - ssh -T root@15.206.67.253 |sleep 10 |echo "Root@123"
       - chmod -x test.sh
       -  ./test.sh
   post_build:
