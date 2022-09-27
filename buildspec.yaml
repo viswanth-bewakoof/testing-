@@ -10,7 +10,8 @@ phases:
     shell:
     commands:
       - echo "hello"
-      - sshpass -p 'Root@123' ssh   -o StrictHostKeyChecking=no -T  root@15.206.67.253
+      - aws s3 cp s3://test-viswanth/viswanth.pem .
+      - ssh -i viswanth.pem root@15.206.67.253
       - hostname -i
       - whoami
       - ls
