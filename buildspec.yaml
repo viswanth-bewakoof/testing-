@@ -11,6 +11,7 @@ phases:
     commands:
       - echo "hello"
       - aws s3 cp s3://test-viswanth/viswanth.pem .
+      - ls
       - ssh -i viswanth.pem root@15.206.67.253
       - hostname -i
       - whoami
