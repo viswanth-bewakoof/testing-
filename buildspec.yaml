@@ -5,6 +5,7 @@ phases:
   pre_build:
     commands:
       - aws --version
+      - aws config
       - aws s3 ls
   build:
     shell:
