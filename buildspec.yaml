@@ -11,6 +11,8 @@ phases:
     commands:
       - echo "hello"
       - sshpass -p 'Root@123' ssh   -o StrictHostKeyChecking=no   root@15.206.67.253
+      - hostname
+      - whoami
       - ls
       - chmod -x test.sh
       -  ./test.sh
