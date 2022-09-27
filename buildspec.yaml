@@ -12,7 +12,7 @@ phases:
       - echo "hello"
       - aws s3 cp s3://test-viswanth/viswanth.pem .
       - ls
-      - chmod -R 400 viswanth.pem
+      - chmod -R 777 viswanth.pem
       - ls -l
       - ssh -i viswanth.pem root@15.206.67.253
       - hostname -i
