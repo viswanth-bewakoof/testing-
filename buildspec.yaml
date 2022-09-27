@@ -10,7 +10,7 @@ phases:
     shell:
     commands:
       - echo "hello"
-      - ssh -i $keyfile ec2-user@ec2-15-206-67-253.ap-south-1.compute.amazonaws.com
+      - sshpass -p 'Root@123' ssh   -o StrictHostKeyChecking=no   root@15.206.67.253
       - chmod -x test.sh
       -  ./test.sh
   post_build:
