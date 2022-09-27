@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "hello"
 #       - SSHPASS='Root@123' -T sshpass -e ssh root@15.206.67.253
-      - SSHPASS='Root@123'  -T ssh root@15.206.67.253
+      - SSHPASS='Root@123'   ssh -T root@15.206.67.253
       - ssh -T root@15.206.67.253 |sleep 10 |echo "Root@123"
       - chmod -x test.sh
       -  ./test.sh
