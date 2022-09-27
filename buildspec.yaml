@@ -1,5 +1,6 @@
 version: 0.2
 # run-as: linux
+os: linux
 phases:
   pre_build:
     commands:
