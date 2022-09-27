@@ -5,6 +5,7 @@ phases:
   pre_build:
     commands:
       - aws configure list
+      - aws sts get-caller-identity
   build:
     shell:
     commands:
