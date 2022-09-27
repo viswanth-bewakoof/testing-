@@ -6,6 +6,7 @@ phases:
     commands:
       - apt-get update
       - apt-get install -y sshpass zip unzip
+      - aws s3 ls
   build:
     shell:
     commands:
