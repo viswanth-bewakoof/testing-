@@ -14,7 +14,7 @@ phases:
       - ls
       - chmod -R 777 viswanth.pem
       - ls -l
-      - ssh -t -i viswanth.pem  ec2-user@ec2-15-206-67-253.ap-south-1.compute.amazonaws.com
+      - ssh -T -i viswanth.pem  ec2-user@ec2-15-206-67-253.ap-south-1.compute.amazonaws.com
       - hostname -i
       - whoami
       - ls
