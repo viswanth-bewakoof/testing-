@@ -15,11 +15,6 @@ phases:
       - chmod -R 400 viswanth.pem
       - ls -l
       - ssh -T -o " StrictHostKeyChecking no"  -i viswanth.pem  ec2-user@15.206.67.253 ./test.sh
-      - hostname -i
-      - whoami
-      - ls
-      - chmod -x test.sh
-      -  ./test.sh
   post_build:
     commands:
       - echo "hello its running"
