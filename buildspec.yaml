@@ -14,7 +14,7 @@ phases:
       - ls
       - chmod -R 755 viswanth.pem
       - ls -l
-      - ssh -T -i ./viswanth.pem  ec2-user@ec2-15-206-67-253.ap-south-1.compute.amazonaws.com
+      - ssh -T -o "IdentitiesOnly=yes"  -i ./viswanth.pem  ec2-user@ec2-15-206-67-253.ap-south-1.compute.amazonaws.com
       - hostname -i
       - whoami
       - ls
