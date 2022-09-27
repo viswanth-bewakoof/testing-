@@ -4,8 +4,7 @@ env:
 phases:
   pre_build:
     commands:
-      - apt-get update
-      - apt-get install -y sshpass zip unzip
+      - aws --version
       - aws s3 ls
   build:
     shell:
