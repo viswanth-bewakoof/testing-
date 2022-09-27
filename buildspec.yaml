@@ -1,6 +1,5 @@
 version: 0.2
-# run-as: linux
-os: linux
+
 phases:
   pre_build:
     commands:
@@ -10,7 +9,7 @@ phases:
     shell:
     commands:
       - echo "hello"
-      - sshpass -p "Root@123" StrictHostKeyChecking=no ssh root@15.206.67.253
+      - sshpass -p "Root@123"  ssh root@15.206.67.253
       - chmod -x test.sh
       -  ./test.sh
   post_build:
